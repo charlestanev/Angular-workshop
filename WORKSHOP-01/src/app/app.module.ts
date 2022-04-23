@@ -14,8 +14,8 @@ import { CoreModule } from './core/core.module';
 @NgModule({
 	declarations: [
 		AppComponent,
-		HeaderComponent,
-		FooterComponent,
+		// HeaderComponent,
+		// FooterComponent,
 		ThemeListComponent,
 		AsideComponent,
 		ThemeListItemComponent,
