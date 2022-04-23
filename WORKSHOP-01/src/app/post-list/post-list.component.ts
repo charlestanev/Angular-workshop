@@ -3,22 +3,22 @@ import { IPost } from '../interfaces';
 import { PostService } from '../post.service';
 
 @Component({
-  selector: 'app-post-list',
-  templateUrl: './post-list.component.html',
-  styleUrls: ['./post-list.component.css']
+	selector: 'app-post-list',
+	templateUrl: './post-list.component.html',
+	styleUrls: ['./post-list.component.css']
 })
 export class PostListComponent implements OnInit {
 
-  @Input() themeId: string;
+	@Input() themeId: string;
 
-  postList: IPost[];
+	postList: IPost[];
 
-  constructor(private postService: PostService) { }
+	constructor(private postService: PostService) { }
 
-  ngOnInit(): void {
-    this.postService.loadPostList(this.themeId, 5).subscribe(postList => {
-      this.postList = postList;
-    });
-  }
+	ngOnInit(): void {
+		this.postService.loadPostList(this.themeId, 5).subscribe(postList => {
+			this.postList = postList;
+		});
+	}
 
 }
