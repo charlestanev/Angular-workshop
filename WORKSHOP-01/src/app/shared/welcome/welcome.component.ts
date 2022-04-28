@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { UserService } from 'src/app/core/user.service';
 
 @Component({
   selector: 'app-welcome',
@@ -7,7 +8,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor() { }
+  isLoggedIn: boolean = this.userService.isLogged;
+
+  constructor(private userService: UserService) { }
 
   ngOnInit(): void {
   }

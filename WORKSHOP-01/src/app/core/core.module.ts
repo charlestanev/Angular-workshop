@@ -6,6 +6,7 @@ import { PostService } from './post.service';
 import { storageServiceProvider } from './storage.service';
 import { ThemeService } from './theme.service';
 import { UserService } from './user.service';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -15,7 +16,8 @@ import { UserService } from './user.service';
 		FooterComponent
 	],
 	imports: [
-		CommonModule
+		CommonModule,
+		RouterModule
 	],
 	exports: [
 		HeaderComponent,

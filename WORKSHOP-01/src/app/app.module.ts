@@ -7,7 +7,6 @@ import { HeaderComponent } from './core/header/header.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { CoreModule } from './core/core.module';
 import { ThemesModule } from './feature/themes/themes.module';
-import { WelcomeComponent } from './shared/welcome/welcome.component';
 import { RouterModule } from '@angular/router';
 import { PagesModule } from './feature/pages/pages.module';
 import { AppRoutingModule } from './app-routing-module';
@@ -15,7 +14,6 @@ import { AppRoutingModule } from './app-routing-module';
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent
   ],
   imports: [
     BrowserModule,
