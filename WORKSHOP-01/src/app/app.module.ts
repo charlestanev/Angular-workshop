@@ -9,6 +9,8 @@ import { CoreModule } from './core/core.module';
 import { ThemesModule } from './feature/themes/themes.module';
 import { WelcomeComponent } from './shared/welcome/welcome.component';
 import { RouterModule } from '@angular/router';
+import { PagesModule } from './feature/pages/pages.module';
+import { AppRoutingModule } from './app-routing-module';
 
 @NgModule({
   declarations: [
@@ -19,9 +21,10 @@ import { RouterModule } from '@angular/router';
     BrowserModule,
     HttpClientModule,
     CoreModule.forRoot(),
-    CoreModule,
+    AppRoutingModule,
     ThemesModule,
-    RouterModule
+    RouterModule,
+    PagesModule
   ],
   providers: [
 
