@@ -11,10 +11,12 @@ import { RouterModule } from '@angular/router';
 import { PagesModule } from './feature/pages/pages.module';
 import { AppRoutingModule } from './app-routing-module';
 import { AuthModule } from './auth/auth.module';
+// import { ThemesPageComponent } from './feature/themes/themes-page/themes-page.component';
 
 @NgModule({
 	declarations: [
 		AppComponent,
+		// ThemesPageComponent,
 	],
 	imports: [
 		BrowserModule,
