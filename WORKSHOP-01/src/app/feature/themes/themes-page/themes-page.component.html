@@ -1,4 +1,7 @@
 <main>
+	<div *ngIf="!isLoggedIn">
+		<app-welcome></app-welcome>
+	</div>
 	<app-theme-list></app-theme-list>
 </main>
 <aside>

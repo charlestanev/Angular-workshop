@@ -6,6 +6,7 @@ import { ThemeListItemComponent } from './theme-list-item/theme-list-item.compon
 import { ThemeListComponent } from './theme-list/theme-list.component';
 import { ThemesRoutingModule } from './themes-routing.module';
 import { ThemesPageComponent } from './themes-page/themes-page.component';
+import { SharedModule } from 'src/app/shared/shared-module';
 
 
 
@@ -19,6 +20,7 @@ import { ThemesPageComponent } from './themes-page/themes-page.component';
 	],
 	imports: [
 		CommonModule,
+		SharedModule,
 		ThemesRoutingModule,
 	],
 	exports: [
